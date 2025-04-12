@@ -1,16 +1,16 @@
 # Vue Slot Tunnel
 
-A Vue3 plugin for tunneling slots through multiple component layers.
+Vue3 插件，用于在多层组件之间传递插槽内容。
 
-## Installation
+## 安装
 
 ```bash
 npm install vue-slot-tunnel
 ```
 
-## Usage
+## 使用方法
 
-1. Register the plugin in your Vue app:
+1. 在 Vue 应用中注册插件：
 
 ```js
 import { createApp } from 'vue'
@@ -22,55 +22,55 @@ app.use(SlotTunnel)
 app.mount('#app')
 ```
 
-2. Use the tunnel system:
+2. 使用插槽隧道系统：
 
-In your parent component, define slots with a `tunnel-` prefix:
+在父组件中，定义带有 `tunnel-` 前缀的插槽：
 
 ```vue
 <!-- ParentComponent.vue -->
 <template>
   <div>
-    <h2>Parent Component</h2>
+    <h2>父组件</h2>
     <child-component></child-component>
   </div>
 </template>
 ```
 
-In your app component:
+在应用组件中：
 
 ```vue
 <!-- App.vue -->
 <template>
   <parent-component>
-    <!-- This content will be tunneled to the deep component -->
+    <!-- 这个内容将被传送到深层子组件 -->
     <template #tunnel-footer>
-      <p>This is tunneled content</p>
+      <p>这是被传送的内容</p>
     </template>
   </parent-component>
 </template>
 ```
 
-In your deep child component, use the SlotTunnel component to receive the content:
+在深层子组件中，使用 SlotTunnel 组件接收内容：
 
 ```vue
 <!-- DeepChildComponent.vue -->
 <template>
   <div>
-    <h4>Deep Child Component</h4>
-    <!-- Renders content from slot with tunnel-footer name -->
+    <h4>深层子组件</h4>
+    <!-- 渲染来自 tunnel-footer 插槽的内容 -->
     <slot-tunnel name="footer" />
   </div>
 </template>
 ```
 
-## Configuration
+## 配置
 
-You can customize the tunnel prefix when registering the plugin:
+您可以在注册插件时自定义隧道前缀：
 
 ```js
 app.use(SlotTunnel, { prefix: 'custom-tunnel-' })
 ```
 
-## License
+## 许可证
 
 MIT

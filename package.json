@@ -1,0 +1,38 @@
+{
+  "name": "vue-slot-tunnel",
+  "version": "1.0.0",
+  "description": "A Vue3 plugin for slot tunneling through multiple components",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc -w",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "vue",
+    "vue3",
+    "slots",
+    "tunnel",
+    "component"
+  ],
+  "author": "",
+  "license": "MIT",
+  "peerDependencies": {
+    "vue": "^3.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.5",
+    "vue": "^3.2.47"
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md",
+    "README.zh-CN.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": ""
+  }
+}
