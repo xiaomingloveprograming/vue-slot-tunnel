@@ -1,5 +1,8 @@
 # Vue Slot Tunnel
 
+[![English](https://img.shields.io/badge/language-English-blue.svg)](./README.md)
+[![中文](https://img.shields.io/badge/language-中文-red.svg)](./README.zh-CN.md)
+
 Vue3 插件，用于在多层组件之间传递插槽内容。
 
 ## 安装

@@ -1,5 +1,8 @@
 # Vue Slot Tunnel
 
+[![English](https://img.shields.io/badge/language-English-blue.svg)](./README.md)
+[![中文](https://img.shields.io/badge/language-中文-red.svg)](./README.zh-CN.md)
+
 A Vue3 plugin for tunneling slots through multiple component layers.
 
 ## Installation

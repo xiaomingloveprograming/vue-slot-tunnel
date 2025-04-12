@@ -1,6 +1,6 @@
 {
   "name": "vue-slot-tunnel",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Vue3 plugin for slot tunneling through multiple components",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
